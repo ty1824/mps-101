@@ -1,0 +1,58 @@
+import org.apache.tools.ant.util.TeeOutputStream
+
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+}
+
+apply plugin: 'base'
+
+repositories {
+  maven {
+    mavenCentral()
+    url 'https://projects.itemis.de/nexus/content/groups/OS'
+  }
+}
+
+configurations {
+  mpsPlugins
+}
+
+dependencies {
+  // Plugin dependencies for project
+  mpsPlugins group: 'com.mbeddr', name: 'platform', version: '1.0.20107.+'
+}
+
+task unzipPlugins(type: Copy, description: "Unzips the IDE plugins into the plugins folder") {
+  dependsOn configurations.mpsPlugins
+  from {
+    configurations.mpsPlugins.resolve().collect { zipTree(it) }
+  }
+  into 'plugins'
+}
+
+task setup(group: 'Project',
+           description: 'Initializes the project for development',
+           dependsOn: unzipPlugins)
+
+clean.doFirst {
+  delete 'plugins'
+  // delete all generated code
+  ant.delete(includeemptydirs: true) {
+    fileset(dir: "${rootDir}", defaultexcludes: false) {
+      include(name: '**/lib/**')
+      include(name: '**/source_gen/**')
+      include(name: '**/source_gen.caches/**')
+      include(name: '**/classes_gen/**')
+      include(name: '**/classes_gen.caches/**')
+      include(name: '**/test_gen/**')
+      include(name: '**/test_gen.caches/**')
+    }
+  }
+}
+
+
+defaultTasks 'build'
+
+
