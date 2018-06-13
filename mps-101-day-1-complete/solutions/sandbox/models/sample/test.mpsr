@@ -4,7 +4,9 @@
   <imports />
   <registry>
     <language id="e54b94ed-bb62-4793-94b9-ca3c5b0e565f" name="mps101">
+      <concept id="4408980294043879661" name="mps101.structure.DivideExpression" flags="ng" index="250h3q" />
       <concept id="4408980294043879660" name="mps101.structure.MultiplyExpression" flags="ng" index="250h3r" />
+      <concept id="4408980294043879659" name="mps101.structure.MinusExpression" flags="ng" index="250h3s" />
       <concept id="4408980294044167555" name="mps101.structure.Worksheet" flags="ng" index="257fmO">
         <child id="4408980294044167560" name="statements" index="257fmZ" />
       </concept>
@@ -58,6 +60,31 @@
             </node>
           </node>
           <node concept="8lzJJ" id="3OJQ3uSkGik" role="8lzJ7">
+            <property role="8lzJG" value="5" />
+          </node>
+        </node>
+      </node>
+      <node concept="8lzEE" id="NOe4LwCEv_" role="8lzEH">
+        <node concept="250h3q" id="NOe4LwCEyb" role="8lzDg">
+          <node concept="250h3r" id="NOe4LwCEyc" role="8lzJ9">
+            <node concept="250h3s" id="NOe4LwCEyd" role="8lzJ9">
+              <node concept="8lzIF" id="NOe4LwCEye" role="8lzJ9">
+                <node concept="8lzJJ" id="NOe4LwCEyf" role="8lzJ9">
+                  <property role="8lzJG" value="1" />
+                </node>
+                <node concept="8lzJJ" id="NOe4LwCEyg" role="8lzJ7">
+                  <property role="8lzJG" value="2" />
+                </node>
+              </node>
+              <node concept="8lzJJ" id="NOe4LwCEyh" role="8lzJ7">
+                <property role="8lzJG" value="3" />
+              </node>
+            </node>
+            <node concept="8lzJJ" id="NOe4LwCEyi" role="8lzJ7">
+              <property role="8lzJG" value="4" />
+            </node>
+          </node>
+          <node concept="8lzJJ" id="NOe4LwCEyw" role="8lzJ7">
             <property role="8lzJG" value="5" />
           </node>
         </node>
