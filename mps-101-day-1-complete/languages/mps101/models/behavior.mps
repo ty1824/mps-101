@@ -18,6 +18,7 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
@@ -65,6 +66,7 @@
       <property role="TrG5h" value="priority" />
       <property role="13i0it" value="true" />
       <property role="13i0iv" value="true" />
+      <property role="2Ki8OM" value="true" />
       <node concept="3Tm1VV" id="3OJQ3uSbI0o" role="1B3o_S" />
       <node concept="10Oyi0" id="3OJQ3uSbI0B" role="3clF45" />
       <node concept="3clFbS" id="3OJQ3uSbI0q" role="3clF47" />
@@ -80,6 +82,7 @@
       <property role="TrG5h" value="priority" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
+      <property role="2Ki8OM" value="true" />
       <ref role="13i0hy" node="3OJQ3uSbI0n" resolve="priority" />
       <node concept="3Tm1VV" id="3OJQ3uSbI1B" role="1B3o_S" />
       <node concept="3clFbS" id="3OJQ3uSbI1E" role="3clF47">
@@ -102,6 +105,7 @@
       <property role="TrG5h" value="priority" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
+      <property role="2Ki8OM" value="true" />
       <ref role="13i0hy" node="3OJQ3uSbI0n" resolve="priority" />
       <node concept="3Tm1VV" id="3OJQ3uSbI3u" role="1B3o_S" />
       <node concept="3clFbS" id="3OJQ3uSbI3x" role="3clF47">
@@ -124,6 +128,7 @@
       <property role="TrG5h" value="priority" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
+      <property role="2Ki8OM" value="true" />
       <ref role="13i0hy" node="3OJQ3uSbI0n" resolve="priority" />
       <node concept="3Tm1VV" id="3OJQ3uSbIdw" role="1B3o_S" />
       <node concept="3clFbS" id="3OJQ3uSbIdz" role="3clF47">
@@ -146,6 +151,7 @@
       <property role="TrG5h" value="priority" />
       <property role="13i0it" value="false" />
       <property role="13i0iv" value="false" />
+      <property role="2Ki8OM" value="true" />
       <ref role="13i0hy" node="3OJQ3uSbI0n" resolve="priority" />
       <node concept="3Tm1VV" id="3OJQ3uSbIeQ" role="1B3o_S" />
       <node concept="3clFbS" id="3OJQ3uSbIeT" role="3clF47">

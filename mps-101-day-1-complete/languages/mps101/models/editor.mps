@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="5rhz" ref="r:57337baf-5fad-407f-97a3-dec09c391d67(mps101.structure)" />
+    <import index="aizf" ref="r:241605e4-424b-4430-808b-324f53f36100(mps101.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -62,6 +63,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="1381973545438177171" name="com.mbeddr.mpsutil.grammarcells.structure.NumberLiteralTokenizer" flags="ng" index="bYqod" />
@@ -71,7 +75,10 @@
       <concept id="5083944728300220902" name="com.mbeddr.mpsutil.grammarcells.structure.SubstituteCell" flags="ng" index="yw3OH">
         <child id="5083944728300220903" name="wrapped" index="yw3OG" />
       </concept>
-      <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n" />
+      <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n">
+        <child id="8207263695491670784" name="priority" index="2EmURo" />
+      </concept>
+      <concept id="8207263695491691232" name="com.mbeddr.mpsutil.grammarcells.structure.SubconceptExpression" flags="ng" index="2EmZKS" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
@@ -86,6 +93,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -136,7 +144,14 @@
     <property role="3GE5qa" value="expression" />
     <ref role="1XX52x" to="5rhz:6ETDIXyVTOz" resolve="BinaryExpression" />
     <node concept="1WcQYu" id="3OJQ3uSbj8o" role="2wV5jI">
-      <node concept="2ElW$n" id="3OJQ3uSbj8q" role="2El2Yn" />
+      <node concept="2ElW$n" id="3OJQ3uSbj8q" role="2El2Yn">
+        <node concept="2OqwBi" id="76794pTyALv" role="2EmURo">
+          <node concept="2EmZKS" id="76794pTyAoh" role="2Oq$k0" />
+          <node concept="2qgKlT" id="76794pTyBcP" role="2OqNvi">
+            <ref role="37wK5l" to="aizf:3OJQ3uSbI0n" resolve="priority" />
+          </node>
+        </node>
+      </node>
       <node concept="3EZMnI" id="6ETDIXyVTPw" role="1LiK7o">
         <node concept="1kIj98" id="3OJQ3uSbj8J" role="3EZMnx">
           <node concept="3F1sOY" id="6ETDIXyVTPE" role="1kIj9b">
