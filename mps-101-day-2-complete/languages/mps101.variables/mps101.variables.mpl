@@ -39,6 +39,7 @@
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
+        <module reference="e54b94ed-bb62-4793-94b9-ca3c5b0e565f(mps101)" version="0" />
         <module reference="890089d3-7cd4-4456-9cb5-90eccd1d849e(mps101.variables)" version="0" />
         <module reference="ede330bd-faf9-4b7c-af65-f5d41bafaff9(mps101.variables#8180547133248183926)" version="0" />
       </dependencyVersions>
@@ -47,7 +48,6 @@
   </generators>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">e54b94ed-bb62-4793-94b9-ca3c5b0e565f(mps101)</dependency>
     <dependency reexport="false">890089d3-7cd4-4456-9cb5-90eccd1d849e(mps101.variables)</dependency>
   </dependencies>
   <languageVersions>
@@ -99,6 +99,8 @@
     <module reference="e54b94ed-bb62-4793-94b9-ca3c5b0e565f(mps101)" version="0" />
     <module reference="890089d3-7cd4-4456-9cb5-90eccd1d849e(mps101.variables)" version="0" />
   </dependencyVersions>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>e54b94ed-bb62-4793-94b9-ca3c5b0e565f(mps101)</extendedLanguage>
+  </extendedLanguages>
 </language>
 

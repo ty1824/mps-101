@@ -60,6 +60,9 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6ETDIXyVTL4" resolve="Statement" />
     </node>
+    <node concept="PrWs8" id="76794pTADjY" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6ETDIXyVTL4">
     <property role="EcuMT" value="7690361385799097412" />

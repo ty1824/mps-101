@@ -32,6 +32,9 @@
       <concept id="8180547133248185344" name="mps101.variables.structure.LetStatement" flags="ng" index="87w16">
         <child id="8180547133248185354" name="initializer" index="87w1c" />
       </concept>
+      <concept id="8180547133248188681" name="mps101.variables.structure.ReferenceExpression" flags="ng" index="87xlf">
+        <reference id="8180547133248188709" name="declaration" index="87xlz" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -120,8 +123,13 @@
       </node>
       <node concept="87w16" id="76794pTACt1" role="8lzEH">
         <property role="TrG5h" value="b" />
-        <node concept="8lzJJ" id="76794pTACtN" role="87w1c">
-          <property role="8lzJG" value="1234" />
+        <node concept="8lzIF" id="76794pTB6jd" role="87w1c">
+          <node concept="87xlf" id="76794pTB6jz" role="8lzJ7">
+            <ref role="87xlz" node="76794pTACpy" resolve="a" />
+          </node>
+          <node concept="8lzJJ" id="76794pTACtN" role="8lzJ9">
+            <property role="8lzJG" value="1234" />
+          </node>
         </node>
       </node>
     </node>
