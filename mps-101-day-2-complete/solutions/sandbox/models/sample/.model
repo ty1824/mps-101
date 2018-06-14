@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:72e6c369-15de-4f53-b59b-08e244fe1f8d(sandbox.sample)" content="header">
+  <persistence version="9" />
+  <attribute name="content" value="header" />
+  <languages>
+    <use id="e54b94ed-bb62-4793-94b9-ca3c5b0e565f" name="mps101" version="-1" />
+    <use id="890089d3-7cd4-4456-9cb5-90eccd1d849e" name="mps101.variables" version="0" />
+  </languages>
+  <imports />
+</model>
+
