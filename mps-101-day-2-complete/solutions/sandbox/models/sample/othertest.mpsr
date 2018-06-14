@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:72e6c369-15de-4f53-b59b-08e244fe1f8d(sandbox.sample)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="e54b94ed-bb62-4793-94b9-ca3c5b0e565f" name="mps101">
+      <concept id="4408980294044167555" name="mps101.structure.Worksheet" flags="ng" index="257fmO">
+        <child id="4408980294044167560" name="statements" index="257fmZ" />
+      </concept>
+      <concept id="7690361385799097408" name="mps101.structure.StatementList" flags="ng" index="8lzEJ">
+        <child id="7690361385799097410" name="statements" index="8lzEH" />
+      </concept>
+      <concept id="7690361385799097600" name="mps101.structure.NumberLiteral" flags="ng" index="8lzJJ">
+        <property id="7690361385799097603" name="value" index="8lzJG" />
+      </concept>
+    </language>
+    <language id="890089d3-7cd4-4456-9cb5-90eccd1d849e" name="mps101.variables">
+      <concept id="8180547133248185344" name="mps101.variables.structure.LetStatement" flags="ng" index="87w16">
+        <child id="8180547133248185354" name="initializer" index="87w1c" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="257fmO" id="76794pTDjsY">
+    <property role="TrG5h" value="othertest" />
+    <node concept="8lzEJ" id="76794pTDjsZ" role="257fmZ">
+      <node concept="87w16" id="76794pTDjt6" role="8lzEH">
+        <property role="TrG5h" value="a" />
+        <node concept="8lzJJ" id="76794pTDjtm" role="87w1c">
+          <property role="8lzJG" value="5" />
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+

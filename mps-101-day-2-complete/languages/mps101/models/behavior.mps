@@ -58,7 +58,6 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -83,10 +82,6 @@
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-      </concept>
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -333,25 +328,6 @@
             </node>
           </node>
           <node concept="3clFbS" id="76794pTADtw" role="3clFbx">
-            <node concept="3clFbJ" id="76794pTAMUj" role="3cqZAp">
-              <node concept="3clFbS" id="76794pTAMUl" role="3clFbx">
-                <node concept="3cpWs6" id="76794pTAP7r" role="3cqZAp">
-                  <node concept="2ShNRf" id="76794pTAYUd" role="3cqZAk">
-                    <node concept="1pGfFk" id="76794pTAZ7b" role="2ShVmc">
-                      <ref role="37wK5l" to="o8zo:7ipADkTfAzT" resolve="EmptyScope" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbC" id="76794pTAOa_" role="3clFbw">
-                <node concept="3cmrfG" id="76794pTAOD1" role="3uHU7w">
-                  <property role="3cmrfH" value="0" />
-                </node>
-                <node concept="37vLTw" id="76794pTANaI" role="3uHU7B">
-                  <ref role="3cqZAo" node="76794pTADkD" resolve="index" />
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="76794pTB1wJ" role="3cqZAp">
               <node concept="3cpWsn" id="76794pTB1wK" role="3cpWs9">
                 <property role="TrG5h" value="validStatements" />
