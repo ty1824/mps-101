@@ -85,5 +85,35 @@
       <ref role="1YaFvo" to="wors:76794pTAig0" resolve="LetStatement" />
     </node>
   </node>
+  <node concept="1YbPZF" id="76794pTCo0b">
+    <property role="TrG5h" value="typeof_ReferenceExpression" />
+    <node concept="3clFbS" id="76794pTCo0c" role="18ibNy">
+      <node concept="1Z5TYs" id="76794pTCovg" role="3cqZAp">
+        <node concept="mw_s8" id="76794pTCov$" role="1ZfhKB">
+          <node concept="1Z2H0r" id="76794pTCovw" role="mwGJk">
+            <node concept="2OqwBi" id="76794pTCoBH" role="1Z2MuG">
+              <node concept="1YBJjd" id="76794pTCovP" role="2Oq$k0">
+                <ref role="1YBMHb" node="76794pTCo0e" resolve="referenceExpression" />
+              </node>
+              <node concept="3TrEf2" id="76794pTCoJI" role="2OqNvi">
+                <ref role="3Tt5mk" to="wors:76794pTAj4_" resolve="declaration" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="76794pTCovj" role="1ZfhK$">
+          <node concept="1Z2H0r" id="76794pTCo0i" role="mwGJk">
+            <node concept="1YBJjd" id="76794pTCo52" role="1Z2MuG">
+              <ref role="1YBMHb" node="76794pTCo0e" resolve="referenceExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="76794pTCo0e" role="1YuTPh">
+      <property role="TrG5h" value="referenceExpression" />
+      <ref role="1YaFvo" to="wors:76794pTAj49" resolve="ReferenceExpression" />
+    </node>
+  </node>
 </model>
 
